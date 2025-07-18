@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         btnClear.setOnClickListener(v -> {
             input = "";
             tvSolution.setText("0");
-            tvResult.setText("0");
+            tvResult.setText("");
         });
 
         btnDelete.setOnClickListener(v -> {
@@ -101,11 +101,17 @@ public class MainActivity extends AppCompatActivity {
             try {
                 Expression exp = new ExpressionBuilder(input).build();
                 double result = exp.evaluate();
-                tvResult.setText(String.valueOf(result));
+                if (result == (long) result) {
+                    tvResult.setText(String.valueOf((long) result));
+                } else {
+                    tvResult.setText(String.valueOf(result));
+                }
+
             } catch (Exception e) {
                 tvResult.setText("Error");
             }
         });
+
     }
 
     void addOperator(String op) {
@@ -122,3 +128,4 @@ public class MainActivity extends AppCompatActivity {
         return input.replace("*", "×").replace("/", "÷");
     }
 }
+ 
