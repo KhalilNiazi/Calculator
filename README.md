@@ -69,7 +69,7 @@ The **Simple Calculator App** is a basic yet fully functional mobile application
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/KhalilNiazi/SimpleCalculatorApp.git
+git clone https://github.com/KhalilNiazi/Caluculator.git
 ```
 Open in Android Studio
 
