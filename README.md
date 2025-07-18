@@ -25,7 +25,6 @@ The **Simple Calculator App** is a basic yet fully functional mobile application
 - 🧹 **Clear** and ⌫ **Delete** functionality
 - 🔢 **Real-time input formatting and display**
 - ⚠️ **Error handling** (e.g., division by zero)
-- 🧮 Powered by `exp4j` expression evaluation
 
 ---
 
@@ -69,7 +68,7 @@ The **Simple Calculator App** is a basic yet fully functional mobile application
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/KhalilNiazi/Caluculator.git
+git clone https://github.com/KhalilNiazi/Calculator.git
 ```
 Open in Android Studio
 
